@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block main %}
+<div class="profile-card">
+    <div class="upper-card">
+        <img src="{{ url_for('static', filename='images/iron_man_pic.jpg') }}" alt="iron man profile pic">
+        <h2>Shaquille Thomas</h2>
+        <h5>@sthomas</h5>
+        <h5>Kingston, Jamaica</h5>
+        <h5>Joined {{ date_joined  }}</h5>
+    </div>
+    <div class="lower-card">
+        <p class="description">
+            I am a young, talented frontend/backend developer that have
+            experiences in various frontend and backend languages and 
+            frameworks. Contact me if you want to work on a new project.
+        </p>
+        <ul class="profile-details">
+            <li>
+                <h3>7</h3>
+                <p>Posts</p>
+            </li>
+            <li>
+                <h3>100</h3>
+                <p>Following</p>
+            </li>
+            <li>
+                <h3>250</h3>
+                <p>Followers</p>
+            </li>
+        </ul>
+        <button>Follow</button>
+    </div>
+</div>
+{% endblock %}
